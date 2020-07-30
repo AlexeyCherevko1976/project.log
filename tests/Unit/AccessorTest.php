@@ -31,7 +31,7 @@ class AccessorTest extends TestCase
         $model_post = Post::find(52);
         $model_post_title = $model_post->name;
          
-        //$this->assertEquals($db_post_title, $model_post_title);
-        $this->assertEquals("jjj", "jjj");
+        $this->assertEquals($db_post_title, $model_post_title);
+        //$this->assertEquals("jjj", "jjj");
     }    
 }

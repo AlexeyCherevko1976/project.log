@@ -10,7 +10,7 @@ class AccessorController extends Controller
    public function index(Request $request)
     {
         // get the post-id from request params
-        $post_id = $request->get("id", rand(52,61));
+        $post_id = $request->get("id", 52);
          
         // load the requested post
         $post = Post::find($post_id);
