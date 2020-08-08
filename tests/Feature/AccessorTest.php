@@ -26,7 +26,7 @@ class AccessorTest extends TestCase
     public function testBasicTest()
     {
         // load post manually first
-        $db_post = DB::select('select * from posts where id = 52');
+        $db_post = DB::select('select * from posts where id = 53');
         $db_post_title = ucfirst($db_post[0]->name);
  
         $response = $this->get('/accessor/index');
