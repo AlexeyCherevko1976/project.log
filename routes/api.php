@@ -26,3 +26,7 @@ Route::get('productsValue', function () {
 	$Product=Product::all();
     return response($Product,200);
 });
+
+Route::get('productsValue/{product}', function ($productId) {
+    return response(Product::find($productId), 200);
+});
